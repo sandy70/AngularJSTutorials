@@ -1,0 +1,30 @@
+<html ng-app="MyApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="Script.js"></script>
+  </head>
+  <body>
+      <label>Enter you name</label>
+      <input type="text" ng-model="myName" >
+      <h1>Hello {{myName}}!</h1>
+      <div ng-controller="myController">
+           The current time :  {{ date | date:'yyyy-MM-dd-h-m-s' }}
+           </br>
+           <button ng-click="updateTime()"> Refresh </button>
+
+           <p>Date Input: <input type="date" ng-model="dateValue"></input></p>
+
+
+        <div >
+          <p>Current date : {{ dateValue }}</p>
+        </div>
+     </div>
+
+     <div ng-controller="Cntrl1">
+        <p>{{ message }}</p>
+       <p ng-controller="Cntrl2">{{ message }}</p>
+      
+     </div>
+  </body>
+
+</html>

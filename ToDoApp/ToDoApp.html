@@ -1,11 +1,26 @@
 <html ng-app="ToDoApp">
   <head>
-    <script src="angular.min.js"></script>
+    <script src="C:\Users\swamysandeep\AngularJSTutorials\angular.min.js"></script>
+    <script src="app.js"></script>
 </head>
   <body>
-     <h1> Calculator App </h1>
+     <h1> ToDoApp App </h1>
      <div ng-controller="ToDoAppCtrl as ctrl">
-         
+         <div>
+             <p>Add new todo</p>
+             <input type="text" ng-model="ctrl.newToDo"></input>
+             <button ng-click="ctrl.addNewToDo()">Add</button>
+         </div>
+         <p>To do list</p>
+         <button ng-show="!ctrl.isEdit" ng-click="ctrl.edit()">Edit</button>
+         <button ng-show="ctrl.isEdit" ng-click="ctrl.edit()">Done</button>
+         <ol>
+             <li ng-repeat="todo in ctrl.todos">
+                 <span ng-hide="ctrl.isEdit">{{todo.value}} </span>
+                 <input ng-model="todo.value" ng-hide="!ctrl.isEdit"type="text"></input>
+                 <span><button ng-click="ctrl.deleteTodo($index)">Delete</button></span>
+             </li>
+         </ol>
      </div>
 
   </body>

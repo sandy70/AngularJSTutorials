@@ -15,8 +15,12 @@
          <span><button id="bt2" ng-click="ctrl.operation('-')">-</button></span>
          <span><button id="bt3" ng-click="ctrl.operation('*')">*</button></span>
          <span><button id="bt4"  ng-click="ctrl.operation('/')">/</button></span>
-         
+         </br>
+        <input type="checkbox" ng-model="ctrl.checked"></input>
+        <label ng-show="ctrl.checked">Some content</label>
+        <label ng-if="ctrl.checked">Some content</label>
      </div>
+
   </body>
 
 </html>

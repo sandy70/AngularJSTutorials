@@ -7,16 +7,14 @@
       <label>Enter you name</label>
       <input type="text" ng-model="myName" >
       <h1>Hello {{myName}}!</h1>
-      <div ng-controller="myController">
+     <div ng-controller="myController">
            The current time :  {{ date | date:'yyyy-MM-dd-h-m-s' }}
            </br>
            <button ng-click="updateTime()"> Refresh </button>
 
            <p>Date Input: <input type="date" ng-model="dateValue"></input></p>
-
-
         <div >
-          <p>Current date : {{ dateValue }}</p>
+            <p>Current date : {{ dateValue }}</p>
         </div>
      </div>
 

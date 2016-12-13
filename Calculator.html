@@ -19,6 +19,8 @@
         <input type="checkbox" ng-model="ctrl.checked"></input>
         <label ng-show="ctrl.checked">Some content</label>
         <label ng-if="ctrl.checked">Some content</label>
+
+        <p ng-repeat="i in ctrl.myList"> Hello {{i}}  </p>
      </div>
 
   </body>

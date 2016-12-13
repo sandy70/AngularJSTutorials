@@ -3,6 +3,7 @@ calculatorApp.controller("CalculatorCtrl", CalculatorCtrl);
 
 
 function CalculatorCtrl(){
+    this.myList = [1,2,3,4];
     this.operation = function(button)
     {
         this.selectedOperation = button;

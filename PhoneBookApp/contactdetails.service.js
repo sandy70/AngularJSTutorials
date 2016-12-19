@@ -1,0 +1,47 @@
+(function(){
+var contactApp = angular.module("PhoneBookApp");
+contactApp.service("contactDetailsSvc" , function(){
+    console.log("contactDetailsSvc called");
+ this.contacts = [
+            {
+                "gender": "female",
+                "name":
+                { "title": "miss", "first": "sedef", "last": "tekelioğlu" },
+                "location": { "street": "3067 tunalı hilmi cd", "city": "konya", "state": "antalya", "postcode": 81566 },
+                "email": "sedef.tekelioğlu@example.com",
+                "login": { "username": "blackelephant847", "password": "3434", "salt": "fUiokbMu", "md5": "cf23f973964bce29f8e85c3e74fbcbb1", "sha1": "63319452afd029943b5337441b10d0f36d7ecfcd", "sha256": "6c455725dd4541e4ed2550b03d1021019fcc62168ea4348cf6271e2c8b598fc3" },
+                "dob": "1993-04-17 12:38:11",
+                "registered": "2012-10-09 06:18:54",
+                "phone": "(798)-857-3572",
+                "cell": "(504)-907-1015",
+                "id": { "name": "", "value": null },
+                "picture":
+                {
+                    "medium": "https://randomuser.me/api/portraits/med/women/44.jpg",
+                },
+
+            },
+
+            {
+                "gender": "female",
+                "name": { "title": "ms", "first": "heidi", "last": "miller" },
+                "location": { "street": "8008 ringstraße", "city": "aurich", "state": "niedersachsen", "postcode": 86999 },
+                "email": "heidi.miller@example.com",
+                "login": {
+                    "username": "tinybutterfly325", "password": "diablo",
+                    "salt": "xPda7NyZ", "md5": "1fd9a395c32192f421b76e9043f8fb74",
+                    "sha1": "2511b4921636dd294be231649f5c917dd9cd15f3",
+                    "sha256": "33cc36174257c20c63c58f9cb8382a6fc7063fc7ae6d22086f75c598d6b9080e"
+                },
+                "dob": "1970-04-19 13:12:39",
+                "registered": "2010-03-15 07:44:39",
+                "phone": "0043-5283374",
+                "cell": "0171-3627038",
+                "id": { "name": "", "value": null },
+                "picture": { "medium": "https://randomuser.me/api/portraits/med/women/7.jpg" },
+            }
+        ];
+
+        console.log(this.contacts);
+});
+})();
